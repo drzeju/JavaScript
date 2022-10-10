@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script type="text/javascript" src="./Przelicz.js"></script>
+    <script type="text/javascript" src="./Calculate.js"></script>
     <link href="styles/style.css" rel="stylesheet" />
 </head>
 <body>
+    <input type="button" value="Add field" onclick="addField()">
+    <input type="button" value="Remove field" onclick="removeField()">
     <div id="input">
-        <input type="number" id="num1" />
-        <input type="number" id="num2" />
-        <input type="number" id="num3" />
-        <input type="number" id="num4" />
-        <button type="submit" id="przelicz">Przelicz</button>
+        <input type="text" id="num1" value="0" />
+        <input type="text" id="num2" value="0" />
+        <input type="text" id="temp" value="0" />
     </div>
     <div id="output">
         <p id="sum">Suma: </p>
@@ -21,5 +21,6 @@
         <p id="min">Min: </p>
         <p id="max">Max: </p>
     </div>
+    <script type="text/javascript" src="Calculate.js"></script>
 </body>
 </html>
