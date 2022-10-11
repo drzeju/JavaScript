@@ -34,10 +34,11 @@ function addField(){
 
 function removeField(){
     document.querySelector("#input").removeChild(document.querySelector("#input").lastChild);
+    calculate();
 }
 
 var calc = document.querySelectorAll("#input");
-for (const cal of calc) {
-    cal.addEventListener("input", calculate);
+for (const c of calc) {
+    c.addEventListener("input", calculate);
 }
 
